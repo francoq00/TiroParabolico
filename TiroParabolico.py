@@ -40,10 +40,13 @@ def move():
         targets.append(target)
 
     for target in targets:
+        #El valor de la rapidez en "x" la dejamos igual.
         target.x -= 0.5
 
     if inside(ball):
-        speed.y -= 0.35
+        # Dismiui la rapidez de la pelota en "y" que originalmente era -0.35, a 0.01
+        # para que no perdiera tiempo en "y" y se fuera mas rapido en "x".
+        speed.y -= 0.01
         ball.move(speed)
 
     dupe = targets.copy()
@@ -58,8 +61,8 @@ def move():
     for target in targets:
         if not inside(target):
             return
-
-    ontimer(move, 50)
+    # En este punto, dismunui el tiempo que originalmente era 50, a 10, para que fuera mas rapido.
+    ontimer(move,10)
 
 setup(420, 420, 370, 0)
 hideturtle()
