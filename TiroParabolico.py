@@ -57,10 +57,14 @@ def move():
             targets.append(target)
 
     draw()
-
-    for target in targets:
         if not inside(target):
             return
+    
+    # otro lado de nuestro marco, con esto, el juego seguirá y no parará.
+    # Borramos esto:
+    # for target in targets:
+        # if not inside(target):
+            # return
     # En este punto, dismunui el tiempo que originalmente era 50, a 10, para que fuera mas rapido.
     ontimer(move,10)
 
