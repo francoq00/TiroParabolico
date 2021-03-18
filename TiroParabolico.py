@@ -59,7 +59,7 @@ def move():
         target.x -= 0.5
 
     if inside(ball):
-        # Dismiui la rapidez de la pelota en "y" que originalmente era -0.35, a 0.01
+        # Dismiui la rapidez de la pelota en "y" que originalmente era -0.35, a 0.1
         # para que no perdiera tiempo en "y" y se fuera mas rapido en "x".
         speed.y -= 0.1
         ball.move(speed)
