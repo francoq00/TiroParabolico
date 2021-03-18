@@ -57,9 +57,8 @@ def move():
             targets.append(target)
 
     draw()
-        if not inside(target):
-            return
     
+    # Borré el return de la función para que el juego no parara al momento de que las esferas tocaran el
     # otro lado de nuestro marco, con esto, el juego seguirá y no parará.
     # Borramos esto:
     # for target in targets:
