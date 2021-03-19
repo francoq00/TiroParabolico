@@ -1,3 +1,8 @@
+# Actividad: Tiro Parabolico.
+# Alejandro Lira A00830873
+# Franco Quintanilla A00826953
+# Fecha: 18 de marzo de 2021
+
 #importamos random
 from random import randrange
 #Importamos turtle
